@@ -21,3 +21,10 @@ f = open(file_path, 'rb') # open for reading binary data
 points_read = pickle.load(f) # read and return data
 f.close() # close file
 print(points_read[-1]) # last point read
+
+# check if file exists: if the same program has been run before, the file will exsit, otherwise it will not
+file_path = pathlib.Path('data') / 'points.ser'
+if file_path.exists():
+    print('reading', file_path)
+else:
+    print('no file', file_path)
