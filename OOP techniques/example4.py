@@ -14,6 +14,7 @@ class Product:
 class Laptop(Product):
     def __init__(self, model, price):
         super().__init__(model, price)
+    #pass (contains no code, empty class body)
 
 
 class Router(Product):
