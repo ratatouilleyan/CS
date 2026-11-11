@@ -1,5 +1,6 @@
 def counting_sort(array):
     # find largest and smallest elements
+    if len(array) == 0: return []
     lb = array[0]
     ub = lb
     for i in range(1, len(array)):
